@@ -1,42 +1,63 @@
-<!DOCTYPE html> <!-- 대소문자 구분 X-->
-<html> <!--하나만 존재-->
+<!DOCTYPE html>
+<html>
     <head>
-    <!-- 메타데이터를 포함하기 위한 요소
-        (title, style, link, script)-->
-        <meta charset="utf-8">
-        <!-- 검색엔진에 사용된다-->
-        <title>문서 제목</title>
-        <style> 
-            body{
-                background-color:black;
-                color: red;
-            }
-        </style>
-        <!--html문서 style 정보-->
-        <link rel="stylesheet" href="style.css">
-        <!--외부 리소스와의 연계정보를 정의 
-            HTML과 외부 css연계에 사용된다 -->
-
-        <script>
-            document.addEventListener('click', function(){
-                alert('clicked!');
-            });
-        </script>
-        <!--client-side javascript를 정의한다-->
-        <script src="main.js"></script>
-        <!--외부 javascript 파일을 로드할 수 있다-->
-        <meta name="keywords" content="HTML, CSS, XML, XHTML, Javascript">
-        <!--검색엔진이 사용할 keywords를 정의-->
-        <meta name="description" content="web tutorials on html and css">
-        <!--웹페이지의 설명을 정의-->
-        <meta name="author" content="john doe">
-        <!--웹페이지의 저자를 명기한다-->
-        <meta http-equiv="refresh" content="30">
-        <!-- 웹페이지를 30초마다 Refresh한다-->
+        
     </head>
     <body>
-        <!-- 웹 페이지에 하나만 존재한다-->
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        <!--heading태그는 제목을 나타낼 때 사용
+            h1~h6까지 있으면 중요도 순으로 지정(글자크기)
+            검색엔진으로 인해 제목외에는 사용X-->
+        <h1>This is a heading</h1>
+        <hr>
+        <p> <!--단락을 지정한다-->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+             mollit anim id est laborum.</p>
+        <h2>HTML <small>Small</small> Formatting</h2>
+        <!--small text지정-->
+        <h3>HTML <mark>Marked</mark> Formatting</h3>
+        <h4>heading 4</h4>
+        <h5>heading 5</h5>
+        <h6>heading 6</h6>
+        
+        
+        <p>This text is normal</p>
+        <b>This text is bold</b>
+        <p>This is<br>a <q>"para"</q><br><br>graph with line breaks</p>
+        <p style = "font-weight:normal;">This text is bold</p>
+        <i>This text is italic</i>
+        <p>This&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  is <del><sub>subcripted</sub></del><ins><sup>supercripted</sup></ins></p>
+        <p>My favorite color is <del>blue</del> red <ins>orange</ins></p>
+        
+        <p style ="font-style:italic">This text is italic</p>
+        <!--<p>, <b>, <i> semantic중요성의 의미가 없다-->
+        
+
+        <em>This text is emphasized</em>
+        <!--italic체와 동일하다-->
+        
+        <P></P>
+        <p></p>
+        <STRONG >This text is strong</STRONG>
+    <!--bold의 경우 semantic중요성의 의미는 없지만
+    strong는 bold와 폰트의 차이는 없지만 semantic중요성을
+    가지므로 strong를 사용하는 것이 바람직하다-->
+
+        <pre>
+            var myArray = [];
+console.log(myArray.length); // 0
+<hr>
+
+myArray[1000] = true;  // [ , , ... , , true ]
+
+console.log(myArray.length); // 1001
+console.log(myArray[0]);     // undefined
+        </pre>
+        <!--pre태그 내의 content는 작성된 그대로 표시된다-->
+    <hr> <!--수평줄을 삽입한다-->
+    <q></q><!--큰따옴표로 q요소를 감싼다-->
+    <blockquote>들여쓰기 한다</blockquote>
     </body>
 </html>
