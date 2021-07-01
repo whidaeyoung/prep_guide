@@ -1,90 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>
-            table, th, td {
-              border: 1px solid black;
-              border-collapse: collapse;
-            }
-            th, td {
-              padding: 15px;
-            }
-          </style>
+
     </head>
 
-    <body>
-        <h2>순서없는 목록 (Unordered list)</h2>
-        <ul>
-            <li>coffee</li>
-            <ol>
-                <li>아메리카노</li>
-                <li>카페라떼</li>
-            </ol>
-            <li>tea</li>
-            <li>milk</li>
-        </ul>
-        <h2>순서있는 목록</h2>
-        <ol type="A" start="3">
-            <li>coffee</li>
-            <li value="5">milk</li>
-            <li>tea</li>
+    <body>  <!--github안에가 기본 설정인듯-->
+        <img src="nose.jpg" alt="doug" width="100"><!--alt = 이미지 출력이 없을 경우 표시된다-->
+        <img src="wrongname.jpg" alt="이미지가 없습니다">
+    
+        <audio src="Kalimba.mp3" controls></audio>
+        
+        <audio controls>
+            <source src="Kalimba.mp3" type="audio/mpeg">
             
-        </ol>
-        <ol reversed>
-            <li>coffee</li>
-            <li>milk</li>
-            <li>tea</li>
-            
-        </ol>
-
-        <table border="100"><!--표테두리 지정-->
-            <tr>
-              <th>First name</th><!--맨 윗줄 지정-->
-              <th>Last name</th>
-              <th>Score</th>
-            </tr>
-            <tr>
-              <td>Jill</td><!--내용 입력-->
-              <td>Smith</td>
-              <td>50</td>
-            </tr>
-            <tr>
-              <td>Eve</td>
-              <td>Jackson</td>
-              <td>94</td>
-            </tr>
-            <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>80</td>
-            </tr>
-        </table>
-        <h2>2개의 culumn을 span</h2> 
-            <table>
-            <tr>
-                <th>Name</th>
-                <th colspan="2">Telephone</th><!--열의 수 지정-->
-            </tr>
-            <tr>
-                <td>Bill Gates</td>
-                <td>555 77 854</td>
-                <td>555 77 855</td>
-            </tr>
-            </table>
-
-            <h2>2개의 row를 span</h2> 
-            <table>
-            <tr>
-                <th>Name:</th>
-                <td>Bill Gates</td>
-            </tr>
-            <tr>
-                <th rowspan="2">Telephone:</th> <!--행의 수 지정-->
-                <td>555 77 854</td>
-            </tr>
-            <tr>
-                <td>555 77 855</td>
-            </tr>
-        </table>
+            <source src="Kalimba.ogg" type="audio/ogg">
+        </audio>
+        
+        <video width="640" height="360" controls>
+            <source src="wildlife.mp4" type="video/mp4">
+            <source src="wildlife.webm" type="video/webm">
+        </video>
     </body>
+
 </html>
