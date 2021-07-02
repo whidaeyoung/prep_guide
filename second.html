@@ -1,19 +1,39 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <link rel="stylesheet" href="second.css">
-        <!--css와 연동하는 방법-->
-        <!--embedding style: HTML내부에 css를 포함시키는 방식-->
-        <!-- lnline style: HTML 요소의 style 포로퍼티에
-            css를 기술하는 방식이다-->
+        
     
     </head>
-
+    
     <body>
-        <h1>Hello World</h1><!--css에서 특정단위를 지정-->
-        <p>This is a web page.</p>
+        <h1>Heading</h1>
+        <div class="container">
+        <p id="p1">paragraph 1</p>
+        <p id="p2">paragraph 2</p>
+        </div>
+        <p id="p3">paragraph 3</p>    
+        <!-- id어트리뷰트는 중복 X-->
+
+        <p class="text-center">Center</p>
+        <p class="text-large text-red">Large Red</p>
+        <p class="text-center text-large text-blue">Center Large Blue</p>
+        
+        <a href="http://www.poiemaweb.com">poiemaweb.com</a><br>
+        <a href="http://www.google.com" target="_blank">google.com</a><br>
+        <a href="http://www.naver.com" target="_top">naver.com</a>
+    
+        <h1 title="heading first">Heading first</h1>
+        <h1 title="heading-first">Heading-first</h1>
+        <!-- heading-first의 경우 공백으로 분리가 안되었다-->
+        <h1 title="heading second">Heading second</h1>
+        <h1 title="heading third">Heading third</h1>
+
+        <p lang="en">Hello!</p>
+        <p lang="en-us">Hi!</p>
+        <p lang="us">Hi!</p>
+        <a href="https://www.test.com">https://www.test.com</a><br>
+        <a href="http://www.test.com">http://www.test.com</a>
     </body>
 </html>
-
-<!-- reset css : 웹브라우저에 따라 디폴트 스타일이 상이하고
-    지원하는 태그나 스타일도 다른데 그걸 통일시켜 주는 역할을 한다.-->
